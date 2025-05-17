@@ -188,7 +188,7 @@ def create_ctc_training_set(path):
         :type path: Path
     :return: None
     """
-
+    path = Path(path)
     # Create directories
     Path.mkdir(path / 'ctc_training_set', exist_ok=True)
     Path.mkdir(path / 'ctc_training_set' / 'all', exist_ok=True)
