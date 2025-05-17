@@ -53,7 +53,7 @@ def main():
     # Create CTC Training Set
     if args.create_ctc_set:
         print('Create CTC Training Set (Pena label generation needs some time)')
-        create_ctc_training_set(path=path_datasets)
+        create_ctc_training_set(path='/kaggle/working/')
     else:
         if not QFileInfo(str(path_datasets / 'ctc_training_set' / 'train')).exists():
             return print('No CTC Training Set found. Run with flag -c to create the data set.')
